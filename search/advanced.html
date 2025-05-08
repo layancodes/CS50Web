@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="adv_style.css">
+        <title>Google Advanced</title>
+    </head>
+    <body>
+        <!-- REDIRECT BUTTONS -->
+        <div class="redirect-buttons-pos">
+            <form action="index.html">
+                <input class="redirect-buttons" type="submit" value="Google Search">
+            </form>
+            <form action="image.html">
+                <input class="redirect-buttons" type="submit" value="Image Search">
+            </form>
+        </div>
+
+        <!-- LOGO -->
+        <img class="logo" src="assets/logo.png ">
+
+        <!-- ADVANCED SEARCH -->
+        <form action="https://www.google.com/search">
+            <!-- TITLE -->
+            <h2>Advanced Search</h2>
+            
+            <!-- SEARCH FIELDS -->
+            <div class="search-field">
+                <span class="label">all these words:</span>
+                <input type="text" name="as_q" placeholder="Search...">
+                <span class="description">Type the important words: tri-colour rat terrier</span>
+            </div>
+            <div class="search-field"> 
+                <span class="label">this exact word or phrase:</span>
+                <input type="text" name="as_epq" placeholder="Search...">
+                <span class="description"> Put exact words in quotes: "rat terrier"</span>
+            </div>
+            <div class="search-field">
+                <span class="label">any of these words:</span>
+                <input type="text" name="as_oq" placeholder="Search...">
+                <span class="description"> Type OR between all the words you want: miniature OR standard</span>
+            </div>
+            <div class="search-field">
+                <span class="label">none of these words:</span>
+                <input type="text" name="as_eq" placeholder="Search...">
+                <span class="description">Put a minus sign just before words that you don't want: -rodent, -"Jack Russell"</span>
+            </div>
+            <!-- BUTTON -->
+            <input class="adv-button" type="submit" value="Advanced Search">
+
+        </form>
+    </body>
+</html>
+
+<!-- looks likegoogle with links for image and advanced
+ sear up right. gooogle search button. rounded corners-->

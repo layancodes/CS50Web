@@ -1,0 +1,77 @@
+body {
+    background-color: #202124;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.redirect_buttons{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+span{
+    color: #4487f6;
+    font: 16px;
+
+}
+
+.logo {
+    width: 40%;
+    height: auto;
+}
+
+.search_lucky_form {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px;               
+    align-items: center; 
+
+}
+
+.buttons{
+    display: flex;
+    gap: 10px;
+}
+
+input[type=text]{
+    background-color: #3f424a; 
+    border: 1px solid #3f424a; 
+    border-radius: 24px;
+    border-color: #3f424a  ;
+    font-size: 16px;
+    width: 500px;
+    padding: 10px 20px;
+    margin: 15px;
+    color: white;
+}
+
+input[type=submit]{
+    background-color: #303134; 
+    color: white; 
+    padding: 10px 20px;
+    border: 1px solid #303134; 
+}
+
+/* HOVER PROPERTIES */
+
+input[type=text]:hover{
+    background-color: #525458;
+    cursor: text;
+    
+}
+
+input[type=submit]:hover{
+    cursor: pointer;
+    border: 1px solid #fff; 
+}
+
+
+
