@@ -17,13 +17,25 @@
         <img class="logo" src="assets/logo.png ">
         <form class="search_lucky_form" action="https://www.google.com/search">
             <input type="text" name="q" placeholder="Search...">
+            <input type="hidden" name="btnI" value="" id="lucky">
             <div class="buttons">
-                <input type="submit" value="Google Search">
-                <input type="submit" value="I'm Feeling Lucky!">
+                <input type="submit" value="Google Search" onclick="setLucky(false)">
+                <input type="submit"  value="I'm Feeling Lucky!" onclick="setLucky(true)">
             </div>
         </form>
+        
+        <script>
+            function getLucky(isLucky) {
+                const luckyInput = document.getElementById("lucky");
+                if (isLucky){
+                    luckyInput.value = "I'm Feeling Lucky";
+                } else {
+                    luckyInput.value = "";
+                }
+
+            }
+
+        </script>
     </body>
 </html>
 
-<!-- looks likegoogle with links for image and advanced
- sear up right. gooogle search button. rounded corners-->
